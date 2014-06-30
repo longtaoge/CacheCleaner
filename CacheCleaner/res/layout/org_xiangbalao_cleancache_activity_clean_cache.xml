@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CC3C3D3D"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/tz_about_titlell"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/cleancacheactivity_topbg"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tz_mainactivity_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="10dip"
+            android:text="清理缓存"
+            android:textColor="@android:color/white"
+            android:textSize="16dip" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="5dip" >
+
+        <ProgressBar
+            android:id="@+id/org_xiangbalao_cleancache_CleanCacheActivity_container_pb"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip" />
+
+        <TextView
+            android:id="@+id/org_xiangbalao_cleancache_CleanCacheActivity_container_tv_scan_status"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dip"
+            android:text="正在扫描："
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/org_xiangbalao_cleancache_CleanCacheActivity_container"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/org_xiangbalao_cleancache_CleanCacheActivity_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginTop="10dip"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:cacheColorHint="@android:color/white" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/org_xiangbalao_cleancache_CleanCacheActivity_cleanall"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="一键清理"
+        android:textColor="@android:color/white"
+        android:textSize="16dip" />
+
+</LinearLayout>
